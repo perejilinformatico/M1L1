@@ -1,3 +1,15 @@
-import random 
-Cosas_Sobre_mi = ["Me gusta la musica","Me gusta la milanesa","Amo a los gatos","Mi color favorito es el rojo","Mi banda favorita es Queen"]
-print(random.choice(Cosas_Sobre_mi))
+print("Bienvenido al Diccionario")
+
+meme_dict = {
+    "CRINGE": "Algo excepcionalmente raro o embarazoso",
+    "LOL": "Una respuesta común a algo gracioso",
+    "ROFL": "Una respuesta a una broma",
+    "SHEESH": "Ligera desaprobación",
+    "CREEPY": "Aterrador, siniestro",
+    "AGGRO": "Ponerse agresivo/enojado"
+}
+word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
+if word in meme_dict.keys():
+  print(meme_dict[word])    
+else:
+  print("Esa palabra no esta en el diccionario")   
