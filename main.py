@@ -11,5 +11,8 @@ meme_dict = {
 word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
 if word in meme_dict.keys():
   print(meme_dict[word])    
+  i = input("Preciona enter para salir...")
 else:
   print("Esa palabra no esta en el diccionario")   
+  i = input("Preciona enter para salir...")
+  
